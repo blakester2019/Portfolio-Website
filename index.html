@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blake Rhodes</title>
+    <script src="https://kit.fontawesome.com/3e4cea6e0a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <!-- NAV -->
+
+    <nav class="nav main-nav z-depth-0">
+      <div class="left left-nav-div">
+        <ul class="nav-left">
+          <li><a class="nav-left-text" style="font-size: 25px;" href="#about">About</a></li>
+          <li><a class="nav-left-text" style="font-size: 25px;" href="#projects-container">Experience</a></li>
+          <li><a class="nav-left-text" style="font-size: 25px;" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="right right-nav-div">
+        <ul class="nav-right">
+          <li><a href="https://github.com/blakester2019" target="_blank" class="disable-hover"><i class="fab fa-github-square"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/blake-rhodes-9526a218a/" target="_blank" class="disable-hover"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- LANDING -->
+
+    <div class="landing">
+      <h1 class="name">Blake Rhodes</h1>
+      <span class="line"></span>
+      <p class="title-para">Computer Science</p>
+
+      <!-- NAV FOR PHONES -->
+      <div class="nav-for-phones z-depth-0">
+        <div class="nav-for-phones-div">
+          <ul class="nav-for-phones-ul">
+            <li><a href="https://github.com/blakester2019" target="_blank" class="phone-icon disable-hover"><i class="fab fa-github-square"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/blake-rhodes-9526a218a/" target="_blank" class="phone-icon disable-hover"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- ABOUT -->
+
+    <div class="about-container">
+      <div id="about" class="about">
+        <div data-scroll class="about-flex">
+          <div class="about-img-div">
+            <img src="imgs/seniorpicedit.jpg" class="about-img z-depth-3">
+          </div>
+          <div class="about-para-div">
+            <h1 id="res-title2" class="para-title">About</h1>
+            <p class="about-para">
+            My name is Blake Rhodes and I am currently a student at Southern Illinois Univeristy Edwardsville
+            majoring in computer science.
+            </p>
+            <a href="#contact" data-target="modal-contact" class="about-res-link z-depth-4 modal-trigger">View my resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+
+    <div class="experience">
+      <div class="experience-header">
+        <h1>Work Experience</h1>
+        <p>Take a look at all of my experience. If you would like to learn more, feel free to contact me.</p>
+      </div>
+
+      <div class="experience-row">
+        <div class="experience-line"></div>
+        <div class="experience-inner">
+          <div class="experience-left">
+            <img class="experience-img" src="./imgs/RWD.png" alt="Rhodes Web Design">
+          </div>
+          <div class="experience-right">
+            <h3>Rhodes Web Design</h3>
+            <p>JUNE 2019 - CURRENT</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores expedita dolorem dolor magni quis, consequatur blanditiis esse nostrum iste modi aperiam necessitatibus voluptates maxime debitis fugit aliquid. Magnam similique molestiae sed a. Perferendis ducimus iure modi dolores reiciendis quae laudantium veniam consectetur debitis eos magni tempora dolor perspiciatis quas nam odit, optio sunt facere sint harum obcaecati! Doloremque commodi, perspiciatis, placeat maxime nesciunt quaerat nemo natus deleniti quod in neque omnis minima suscipit impedit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT ME -->
+
+    <div class="contact">
+      <div data-scroll class="contact-container">
+        <a href="#" class="btn btn-large contact-btn modal-trigger" data-target="modal-contact" id="contact-btn">CONTACT ME</a>
+      </div>
+    </div>
+
+    <!-- CONTACT MODAL -->
+
+    <div class="modal" id="modal-contact">
+      <div class="modal-content">
+        <div class="container">
+          <h2 class="contact-title">Contact Me</h2>
+          <p class="contact-para">For any questions, contact me using the form or call/text 309-333-5444</p>
+          <form method="POST" action="contactform.php" id="contact-form">
+            <div class="input-field">
+              <input type="text" name="name" id="contact-name" required />
+              <label for="contact-name">Name</label>
+            </div>
+            <div class="input-field">
+              <input type="email" name="mail" id="contact-email" required />
+              <label for="contact-email">Email Address</label>
+            </div>
+            <div class="input-field">
+              <input type="text" name="subject" id="contact-subject" required />
+              <label for="contact-subject">Subject</label>
+            </div>
+            <div class="input-field">
+              <textarea class="textarea materialize-textarea" name="message" id="contact-message" required /></textarea>
+              <label for="contact-email">Message</label>
+            </div>
+            <input type="submit" name="submit" class="btn contact-btn"></input>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
